@@ -1,0 +1,445 @@
+@prefix so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+so:team1610612737 a so:team ;
+    so:abbreviation "ATL"^^xsd:string ;
+    so:hasHomeArena so:arenaState-Farm-Arena ;
+    so:hasHomeCity so:cityAtlanta ;
+    so:nickname "Hawks"^^xsd:string ;
+    so:yearFounded "1949"^^xsd:int .
+
+so:team1610612738 a so:team ;
+    so:abbreviation "BOS"^^xsd:string ;
+    so:hasHomeArena so:arenaTD-Garden ;
+    so:hasHomeCity so:cityBoston ;
+    so:nickname "Celtics"^^xsd:string ;
+    so:yearFounded "1946"^^xsd:int .
+
+so:team1610612739 a so:team ;
+    so:abbreviation "CLE"^^xsd:string ;
+    so:hasHomeArena so:arenaQuicken-Loans-Arena ;
+    so:hasHomeCity so:cityCleveland ;
+    so:nickname "Cavaliers"^^xsd:string ;
+    so:yearFounded "1970"^^xsd:int .
+
+so:team1610612740 a so:team ;
+    so:abbreviation "NOP"^^xsd:string ;
+    so:hasHomeArena so:arenaSmoothie-King-Center ;
+    so:hasHomeCity so:cityNew-Orleans ;
+    so:nickname "Pelicans"^^xsd:string ;
+    so:yearFounded "2002"^^xsd:int .
+
+so:team1610612741 a so:team ;
+    so:abbreviation "CHI"^^xsd:string ;
+    so:hasHomeArena so:arenaUnited-Center ;
+    so:hasHomeCity so:cityChicago ;
+    so:nickname "Bulls"^^xsd:string ;
+    so:yearFounded "1966"^^xsd:int .
+
+so:team1610612742 a so:team ;
+    so:abbreviation "DAL"^^xsd:string ;
+    so:hasHomeArena so:arenaAmerican-Airlines-Center ;
+    so:hasHomeCity so:cityDallas ;
+    so:nickname "Mavericks"^^xsd:string ;
+    so:yearFounded "1980"^^xsd:int .
+
+so:team1610612743 a so:team ;
+    so:abbreviation "DEN"^^xsd:string ;
+    so:hasHomeArena so:arenaPepsi-Center ;
+    so:hasHomeCity so:cityDenver ;
+    so:nickname "Nuggets"^^xsd:string ;
+    so:yearFounded "1976"^^xsd:int .
+
+so:team1610612744 a so:team ;
+    so:abbreviation "GSW"^^xsd:string ;
+    so:hasHomeArena so:arenaChase-Center ;
+    so:hasHomeCity so:cityGolden-State ;
+    so:nickname "Warriors"^^xsd:string ;
+    so:yearFounded "1946"^^xsd:int .
+
+so:team1610612745 a so:team ;
+    so:abbreviation "HOU"^^xsd:string ;
+    so:hasHomeArena so:arenaToyota-Center ;
+    so:hasHomeCity so:cityHouston ;
+    so:nickname "Rockets"^^xsd:string ;
+    so:yearFounded "1967"^^xsd:int .
+
+so:team1610612746 a so:team ;
+    so:abbreviation "LAC"^^xsd:string ;
+    so:hasHomeArena so:arenaStaples-Center ;
+    so:hasHomeCity so:cityLos-Angeles ;
+    so:nickname "Clippers"^^xsd:string ;
+    so:yearFounded "1970"^^xsd:int .
+
+so:team1610612747 a so:team ;
+    so:abbreviation "LAL"^^xsd:string ;
+    so:hasHomeArena so:arenaStaples-Center ;
+    so:hasHomeCity so:cityLos-Angeles ;
+    so:nickname "Lakers"^^xsd:string ;
+    so:yearFounded "1948"^^xsd:int .
+
+so:team1610612748 a so:team ;
+    so:abbreviation "MIA"^^xsd:string ;
+    so:hasHomeArena so:arenaAmericanAirlines-Arena ;
+    so:hasHomeCity so:cityMiami ;
+    so:nickname "Heat"^^xsd:string ;
+    so:yearFounded "1988"^^xsd:int .
+
+so:team1610612749 a so:team ;
+    so:abbreviation "MIL"^^xsd:string ;
+    so:hasHomeArena so:arenaFiserv-Forum ;
+    so:hasHomeCity so:cityMilwaukee ;
+    so:nickname "Bucks"^^xsd:string ;
+    so:yearFounded "1968"^^xsd:int .
+
+so:team1610612750 a so:team ;
+    so:abbreviation "MIN"^^xsd:string ;
+    so:hasHomeArena so:arenaTarget-Center ;
+    so:hasHomeCity so:cityMinnesota ;
+    so:nickname "Timberwolves"^^xsd:string ;
+    so:yearFounded "1989"^^xsd:int .
+
+so:team1610612751 a so:team ;
+    so:abbreviation "BKN"^^xsd:string ;
+    so:hasHomeArena so:arenaBarclays-Center ;
+    so:hasHomeCity so:cityBrooklyn ;
+    so:nickname "Nets"^^xsd:string ;
+    so:yearFounded "1976"^^xsd:int .
+
+so:team1610612752 a so:team ;
+    so:abbreviation "NYK"^^xsd:string ;
+    so:hasHomeArena so:arenaMadison-Square-Garden ;
+    so:hasHomeCity so:cityNew-York ;
+    so:nickname "Knicks"^^xsd:string ;
+    so:yearFounded "1946"^^xsd:int .
+
+so:team1610612753 a so:team ;
+    so:abbreviation "ORL"^^xsd:string ;
+    so:hasHomeArena so:arenaAmway-Center ;
+    so:hasHomeCity so:cityOrlando ;
+    so:nickname "Magic"^^xsd:string ;
+    so:yearFounded "1989"^^xsd:int .
+
+so:team1610612754 a so:team ;
+    so:abbreviation "IND"^^xsd:string ;
+    so:hasHomeArena so:arenaBankers-Life-Fieldhouse ;
+    so:hasHomeCity so:cityIndiana ;
+    so:nickname "Pacers"^^xsd:string ;
+    so:yearFounded "1976"^^xsd:int .
+
+so:team1610612755 a so:team ;
+    so:abbreviation "PHI"^^xsd:string ;
+    so:hasHomeArena so:arenaWells-Fargo-Center ;
+    so:hasHomeCity so:cityPhiladelphia ;
+    so:nickname "76ers"^^xsd:string ;
+    so:yearFounded "1949"^^xsd:int .
+
+so:team1610612756 a so:team ;
+    so:abbreviation "PHX"^^xsd:string ;
+    so:hasHomeArena so:arenaTalking-Stick-Resort-Arena ;
+    so:hasHomeCity so:cityPhoenix ;
+    so:nickname "Suns"^^xsd:string ;
+    so:yearFounded "1968"^^xsd:int .
+
+so:team1610612757 a so:team ;
+    so:abbreviation "POR"^^xsd:string ;
+    so:hasHomeArena so:arenaModa-Center ;
+    so:hasHomeCity so:cityPortland ;
+    so:nickname "Trail Blazers"^^xsd:string ;
+    so:yearFounded "1970"^^xsd:int .
+
+so:team1610612758 a so:team ;
+    so:abbreviation "SAC"^^xsd:string ;
+    so:hasHomeArena so:arenaGolden-1-Center ;
+    so:hasHomeCity so:citySacramento ;
+    so:nickname "Kings"^^xsd:string ;
+    so:yearFounded "1948"^^xsd:int .
+
+so:team1610612759 a so:team ;
+    so:abbreviation "SAS"^^xsd:string ;
+    so:hasHomeArena <http://www.semanticweb.org/avata/ontologies/2021/10/basketarenaAT&T-Center> ;
+    so:hasHomeCity so:citySan-Antonio ;
+    so:nickname "Spurs"^^xsd:string ;
+    so:yearFounded "1976"^^xsd:int .
+
+so:team1610612760 a so:team ;
+    so:abbreviation "OKC"^^xsd:string ;
+    so:hasHomeArena so:arenaChesapeake-Energy-Arena ;
+    so:hasHomeCity so:cityOklahoma-City ;
+    so:nickname "Thunder"^^xsd:string ;
+    so:yearFounded "1967"^^xsd:int .
+
+so:team1610612761 a so:team ;
+    so:abbreviation "TOR"^^xsd:string ;
+    so:hasHomeArena so:arenaScotiabank-Arena ;
+    so:hasHomeCity so:cityToronto ;
+    so:nickname "Raptors"^^xsd:string ;
+    so:yearFounded "1995"^^xsd:int .
+
+so:team1610612762 a so:team ;
+    so:abbreviation "UTA"^^xsd:string ;
+    so:hasHomeArena so:arenaVivint-Smart-Home-Arena ;
+    so:hasHomeCity so:cityUtah ;
+    so:nickname "Jazz"^^xsd:string ;
+    so:yearFounded "1974"^^xsd:int .
+
+so:team1610612763 a so:team ;
+    so:abbreviation "MEM"^^xsd:string ;
+    so:hasHomeArena so:arenaFedExForum ;
+    so:hasHomeCity so:cityMemphis ;
+    so:nickname "Grizzlies"^^xsd:string ;
+    so:yearFounded "1995"^^xsd:int .
+
+so:team1610612764 a so:team ;
+    so:abbreviation "WAS"^^xsd:string ;
+    so:hasHomeArena so:arenaCapital-One-Arena ;
+    so:hasHomeCity so:cityWashington ;
+    so:nickname "Wizards"^^xsd:string ;
+    so:yearFounded "1961"^^xsd:int .
+
+so:team1610612765 a so:team ;
+    so:abbreviation "DET"^^xsd:string ;
+    so:hasHomeArena so:arenaLittle-Caesars-Arena ;
+    so:hasHomeCity so:cityDetroit ;
+    so:nickname "Pistons"^^xsd:string ;
+    so:yearFounded "1948"^^xsd:int .
+
+so:team1610612766 a so:team ;
+    so:abbreviation "CHA"^^xsd:string ;
+    so:hasHomeArena so:arenaSpectrum-Center ;
+    so:hasHomeCity so:cityCharlotte ;
+    so:nickname "Hornets"^^xsd:string ;
+    so:yearFounded "1988"^^xsd:int .
+
+<http://www.semanticweb.org/avata/ontologies/2021/10/basketarenaAT&T-Center> a so:arena ;
+    so:arenaCapacity "18694.0"^^xsd:float ;
+    so:arenaName "AT&T Center"^^xsd:string ;
+    so:isInCity so:citySan-Antonio .
+
+so:arenaAmerican-Airlines-Center a so:arena ;
+    so:arenaCapacity "19200.0"^^xsd:float ;
+    so:arenaName "American Airlines Center"^^xsd:string ;
+    so:isInCity so:cityDallas .
+
+so:arenaAmericanAirlines-Arena a so:arena ;
+    so:arenaCapacity "19600.0"^^xsd:float ;
+    so:arenaName "AmericanAirlines Arena"^^xsd:string ;
+    so:isInCity so:cityMiami .
+
+so:arenaAmway-Center a so:arena ;
+    so:arenaCapacity "0.0"^^xsd:float ;
+    so:arenaName "Amway Center"^^xsd:string ;
+    so:isInCity so:cityOrlando .
+
+so:arenaBankers-Life-Fieldhouse a so:arena ;
+    so:arenaCapacity "18345.0"^^xsd:float ;
+    so:arenaName "Bankers Life Fieldhouse"^^xsd:string ;
+    so:isInCity so:cityIndiana .
+
+so:arenaBarclays-Center a so:arena ;
+    so:arenaCapacity "NaN"^^xsd:float ;
+    so:arenaName "Barclays Center"^^xsd:string ;
+    so:isInCity so:cityBrooklyn .
+
+so:arenaCapital-One-Arena a so:arena ;
+    so:arenaCapacity "20647.0"^^xsd:float ;
+    so:arenaName "Capital One Arena"^^xsd:string ;
+    so:isInCity so:cityWashington .
+
+so:arenaChase-Center a so:arena ;
+    so:arenaCapacity "19596.0"^^xsd:float ;
+    so:arenaName "Chase Center"^^xsd:string ;
+    so:isInCity so:cityGolden-State .
+
+so:arenaChesapeake-Energy-Arena a so:arena ;
+    so:arenaCapacity "19163.0"^^xsd:float ;
+    so:arenaName "Chesapeake Energy Arena"^^xsd:string ;
+    so:isInCity so:cityOklahoma-City .
+
+so:arenaFedExForum a so:arena ;
+    so:arenaCapacity "18119.0"^^xsd:float ;
+    so:arenaName "FedExForum"^^xsd:string ;
+    so:isInCity so:cityMemphis .
+
+so:arenaFiserv-Forum a so:arena ;
+    so:arenaCapacity "17500.0"^^xsd:float ;
+    so:arenaName "Fiserv Forum"^^xsd:string ;
+    so:isInCity so:cityMilwaukee .
+
+so:arenaGolden-1-Center a so:arena ;
+    so:arenaCapacity "17500.0"^^xsd:float ;
+    so:arenaName "Golden 1 Center"^^xsd:string ;
+    so:isInCity so:citySacramento .
+
+so:arenaLittle-Caesars-Arena a so:arena ;
+    so:arenaCapacity "21000.0"^^xsd:float ;
+    so:arenaName "Little Caesars Arena"^^xsd:string ;
+    so:isInCity so:cityDetroit .
+
+so:arenaMadison-Square-Garden a so:arena ;
+    so:arenaCapacity "19763.0"^^xsd:float ;
+    so:arenaName "Madison Square Garden"^^xsd:string ;
+    so:isInCity so:cityNew-York .
+
+so:arenaModa-Center a so:arena ;
+    so:arenaCapacity "19980.0"^^xsd:float ;
+    so:arenaName "Moda Center"^^xsd:string ;
+    so:isInCity so:cityPortland .
+
+so:arenaPepsi-Center a so:arena ;
+    so:arenaCapacity "19099.0"^^xsd:float ;
+    so:arenaName "Pepsi Center"^^xsd:string ;
+    so:isInCity so:cityDenver .
+
+so:arenaQuicken-Loans-Arena a so:arena ;
+    so:arenaCapacity "20562.0"^^xsd:float ;
+    so:arenaName "Quicken Loans Arena"^^xsd:string ;
+    so:isInCity so:cityCleveland .
+
+so:arenaScotiabank-Arena a so:arena ;
+    so:arenaCapacity "19800.0"^^xsd:float ;
+    so:arenaName "Scotiabank Arena"^^xsd:string ;
+    so:isInCity so:cityToronto .
+
+so:arenaSmoothie-King-Center a so:arena ;
+    so:arenaCapacity "NaN"^^xsd:float ;
+    so:arenaName "Smoothie King Center"^^xsd:string ;
+    so:isInCity so:cityNew-Orleans .
+
+so:arenaSpectrum-Center a so:arena ;
+    so:arenaCapacity "19026.0"^^xsd:float ;
+    so:arenaName "Spectrum Center"^^xsd:string ;
+    so:isInCity so:cityCharlotte .
+
+so:arenaState-Farm-Arena a so:arena ;
+    so:arenaCapacity "18729.0"^^xsd:float ;
+    so:arenaName "State Farm Arena"^^xsd:string ;
+    so:isInCity so:cityAtlanta .
+
+so:arenaTD-Garden a so:arena ;
+    so:arenaCapacity "18624.0"^^xsd:float ;
+    so:arenaName "TD Garden"^^xsd:string ;
+    so:isInCity so:cityBoston .
+
+so:arenaTalking-Stick-Resort-Arena a so:arena ;
+    so:arenaCapacity "NaN"^^xsd:float ;
+    so:arenaName "Talking Stick Resort Arena"^^xsd:string ;
+    so:isInCity so:cityPhoenix .
+
+so:arenaTarget-Center a so:arena ;
+    so:arenaCapacity "19356.0"^^xsd:float ;
+    so:arenaName "Target Center"^^xsd:string ;
+    so:isInCity so:cityMinnesota .
+
+so:arenaToyota-Center a so:arena ;
+    so:arenaCapacity "18104.0"^^xsd:float ;
+    so:arenaName "Toyota Center"^^xsd:string ;
+    so:isInCity so:cityHouston .
+
+so:arenaUnited-Center a so:arena ;
+    so:arenaCapacity "21711.0"^^xsd:float ;
+    so:arenaName "United Center"^^xsd:string ;
+    so:isInCity so:cityChicago .
+
+so:arenaVivint-Smart-Home-Arena a so:arena ;
+    so:arenaCapacity "20148.0"^^xsd:float ;
+    so:arenaName "Vivint Smart Home Arena"^^xsd:string ;
+    so:isInCity so:cityUtah .
+
+so:arenaWells-Fargo-Center a so:arena ;
+    so:arenaCapacity "NaN"^^xsd:float ;
+    so:arenaName "Wells Fargo Center"^^xsd:string ;
+    so:isInCity so:cityPhiladelphia .
+
+so:arenaStaples-Center a so:arena ;
+    so:arenaCapacity "19060.0"^^xsd:float ;
+    so:arenaName "Staples Center"^^xsd:string ;
+    so:isInCity so:cityLos-Angeles .
+
+so:cityAtlanta a so:city ;
+    so:cityName "Atlanta"^^xsd:string .
+
+so:cityBoston a so:city ;
+    so:cityName "Boston"^^xsd:string .
+
+so:cityBrooklyn a so:city ;
+    so:cityName "Brooklyn"^^xsd:string .
+
+so:cityCharlotte a so:city ;
+    so:cityName "Charlotte"^^xsd:string .
+
+so:cityChicago a so:city ;
+    so:cityName "Chicago"^^xsd:string .
+
+so:cityCleveland a so:city ;
+    so:cityName "Cleveland"^^xsd:string .
+
+so:cityDallas a so:city ;
+    so:cityName "Dallas"^^xsd:string .
+
+so:cityDenver a so:city ;
+    so:cityName "Denver"^^xsd:string .
+
+so:cityDetroit a so:city ;
+    so:cityName "Detroit"^^xsd:string .
+
+so:cityGolden-State a so:city ;
+    so:cityName "Golden State"^^xsd:string .
+
+so:cityHouston a so:city ;
+    so:cityName "Houston"^^xsd:string .
+
+so:cityIndiana a so:city ;
+    so:cityName "Indiana"^^xsd:string .
+
+so:cityMemphis a so:city ;
+    so:cityName "Memphis"^^xsd:string .
+
+so:cityMiami a so:city ;
+    so:cityName "Miami"^^xsd:string .
+
+so:cityMilwaukee a so:city ;
+    so:cityName "Milwaukee"^^xsd:string .
+
+so:cityMinnesota a so:city ;
+    so:cityName "Minnesota"^^xsd:string .
+
+so:cityNew-Orleans a so:city ;
+    so:cityName "New Orleans"^^xsd:string .
+
+so:cityNew-York a so:city ;
+    so:cityName "New York"^^xsd:string .
+
+so:cityOklahoma-City a so:city ;
+    so:cityName "Oklahoma City"^^xsd:string .
+
+so:cityOrlando a so:city ;
+    so:cityName "Orlando"^^xsd:string .
+
+so:cityPhiladelphia a so:city ;
+    so:cityName "Philadelphia"^^xsd:string .
+
+so:cityPhoenix a so:city ;
+    so:cityName "Phoenix"^^xsd:string .
+
+so:cityPortland a so:city ;
+    so:cityName "Portland"^^xsd:string .
+
+so:citySacramento a so:city ;
+    so:cityName "Sacramento"^^xsd:string .
+
+so:citySan-Antonio a so:city ;
+    so:cityName "San Antonio"^^xsd:string .
+
+so:cityToronto a so:city ;
+    so:cityName "Toronto"^^xsd:string .
+
+so:cityUtah a so:city ;
+    so:cityName "Utah"^^xsd:string .
+
+so:cityWashington a so:city ;
+    so:cityName "Washington"^^xsd:string .
+
+so:cityLos-Angeles a so:city ;
+    so:cityName "Los Angeles"^^xsd:string .
+
