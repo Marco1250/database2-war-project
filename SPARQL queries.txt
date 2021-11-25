@@ -1,0 +1,174 @@
+############# Arenas ordered by capacity
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?arena ?capacity where {
+
+	?arena  so:arenaCapacity ?capacity.
+} 
+ORDER BY DESC(?capacity) 
+
+
+############# Teams with respective arenas and city
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?teamname ?city ?arena where {
+
+    ?team so:nickname ?teamname.
+	?team  so:hasHomeCity ?city.
+    ?team so:hasHomeArena ?arena
+    
+} 
+ 
+
+
+############# Teams ordered by year founded
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?teamname ?yearFoundation  where {
+
+    ?team so:nickname ?teamname.
+    ?team so:yearFounded ?yearFoundation.
+    
+	
+}
+ORDER BY ASC (?yearFoundation)
+
+
+############# Player who participate in more games
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?firstName ?lastName (COUNT(?partecipation) AS ?numberPartecipation) where { 
+
+    ?Person so:firstName ?firstName;
+            so:lastName ?lastName.
+    ?Person so:playInGame ?partecipation.
+	
+}
+GROUP BY ?firstName ?lastName
+ORDER BY DESC(?numberPartecipation)
+LIMIT 1
+
+
+############# Players that in 2011 played in the team "Hawks"
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select ?firstname ?lastname where { 
+    
+     ?partecipation so:year "2011"^^xsd:int.
+     ?person so:playedIn ?partecipation.  
+     ?person so:firstName ?firstname.
+     ?person so:lastName ?lastname.
+     ?partecipation so:playedFor ?team.
+     ?team so:nickname "Hawks".
+    
+}
+
+
+############# Teams rank before the covid stop
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select ?teamname ?rank ?date where { 
+
+    ?team so:nickname ?teamname;
+          so:hasRanking ?ranking.
+    ?ranking so:rank ?rank;
+         so:date ?date
+    FILTER (?date = "2020-03-12"^^xsd:date)
+	
+}
+ORDER BY DESC(?rank)
+
+############# Top 10 ancient teams
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?teamname ?years where {
+
+   ?team so:nickname ?teamname;
+         so:yearFounded ?yearFoundation
+    bind( year(NOW())- ?yearFoundation as ?years )
+	
+}
+ORDER BY DESC(?years)
+LIMIT 10
+
+############# Lakers wins
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select (Count(?game) as ?wins) where{
+
+  ?team so:nickname "Lakers";
+       so:homeClub ?game.
+  ?game so:homeTeamWins "1"^^xsd:integer
+  
+}
+
+############# Teams ordered by games played
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?teamname (Count(?game) as ?games) where{
+    {
+        select ?teamname ?game where{
+			?team so:homeClub ?game;
+            so:nickname ?teamname.
+    
+		}		
+    }
+    
+    UNION 
+	{
+        select ?teamname ?game where{
+			?team so:awayClub ?game;
+            so:nickname ?teamname.
+		}
+    }
+}
+
+GROUP BY (?teamname)
+ORDER BY DESC(?games)
+
+############# Last XMas matches before covid
+PREFIX : <http://www.semanticweb.org/gianmariasilvello/ontologies/2021/3/simple-movie-ontology#>
+PREFIX so: <http://www.semanticweb.org/avata/ontologies/2021/10/basket>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select ?date ?home ?away ?winner where{
+
+    ?game so:gameDate "2019-12-25"^^xsd:date;
+        so:gameDate ?date;
+        so:homeTeamWins ?wins.
+    ?teamHome so:homeClub ?game;
+              so:nickname ?home.
+    ?teamAway so:awayClub ?game;
+        so:nickname ?away.
+    Bind(IF(?wins = "0"^^xsd:integer, ?away, ?home) as ?winner)
+	
+}
+
+
+
+
+
+
+

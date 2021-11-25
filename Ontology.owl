@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/basket">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basket ontology</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#awayClub -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#awayClub">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasHomeArena -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasHomeArena">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Arena"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasHomeCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasHomeCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasRanking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#hasRanking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Ranking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#homeClub -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#homeClub">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#isInCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#isInCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playInGame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playInGame">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playedFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Partecipation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#playedIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Partecipation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#abbreviation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#arenaCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#arenaCapacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Arena"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#arenaName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#arenaName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Arena"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#cityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#cityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Ranking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#gameDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#gameDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#homeTeamWins -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#homeTeamWins">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#nickname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#nickname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#rank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#rank">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Ranking"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#year">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Partecipation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#yearFounded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#yearFounded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Arena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Arena"/>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Partecipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Partecipation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Ranking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Ranking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/avata/ontologies/2021/10/untitled-ontology-13#Team"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
